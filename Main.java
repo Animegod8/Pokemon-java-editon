@@ -1,18 +1,20 @@
 import java.util.Scanner;
+import java.util.HashMap;
 class Main {
-  // identifys your team, items etc
-  int teamSlot = -1;
-  int itemSlot = -1;
-  String[] team;
-  String[] items;
+
+  
+  
   public static void main(String[] args) {
+    HashMap <String, Integer> team = new HashMap<String, Integer>();
+    
     System.out.println("Game start!");
-    Main.selectStarter();
-  }
-  public static void selectStarter(){
-    System.out.println("Select your starter creature");
+    System.out.println("Select your starter");
     Scanner myStarter = new Scanner(System.in);
     String Starter = myStarter.nextLine();
+    team.put(Starter, 5);
+    System.out.println(team);
+
 
   }
 }
+
